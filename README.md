@@ -28,7 +28,7 @@ A Chrome extension that learns your personal reading speed and predicts how long
 - Node.js (v14 or higher)
 - npm
 
-### Build Steps
+### My Build Steps
 
 1. Clone or download this repository
 
@@ -49,13 +49,6 @@ A Chrome extension that learns your personal reading speed and predicts how long
    cp popup/popup.html popup/popup.css dist/popup/
    ```
 
-### Load in Chrome
-
-1. Open Chrome and go to `chrome://extensions/`
-2. Enable **Developer mode** (toggle in top-right corner)
-3. Click **Load unpacked**
-4. Select the `dist` folder
-
 ## Usage
 
 - Visit any article or blog post
@@ -63,24 +56,6 @@ A Chrome extension that learns your personal reading speed and predicts how long
 - While the model is learning, it will show "Learning..." indicator
 - Click the extension icon to view your stats and training progress
 
-## Project Structure
-
-```
-reading-chrome-plugin/
-├── manifest.json        # Chrome extension manifest (v3)
-├── package.json         # npm dependencies
-├── webpack.config.js    # Webpack bundler config
-├── styles.css           # Badge styling
-├── src/
-│   ├── content.js       # Main content script
-│   ├── model.js         # ML model (linear regression)
-│   ├── storage.js       # Chrome storage helpers
-│   └── ui.js            # Badge UI component
-└── popup/
-    ├── popup.html       # Dashboard HTML
-    ├── popup.js         # Dashboard logic
-    └── popup.css        # Dashboard styling
-```
 
 ## Tech Stack
 
