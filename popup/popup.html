@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading Time Predictor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h1>📖 Reading Time Predictor</h1>
+    
+    <div class="stats-section">
+      <h2>Your Stats</h2>
+      
+      <div class="stat-card">
+        <span class="stat-label">Articles Tracked</span>
+        <span class="stat-value" id="total-articles">0</span>
+      </div>
+      
+      <div class="stat-card">
+        <span class="stat-label">Avg Reading Speed</span>
+        <span class="stat-value" id="avg-speed">-- wpm</span>
+      </div>
+      
+      <div class="progress-section">
+        <span class="progress-label">Training Progress</span>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <span class="progress-text" id="progress-text">0/20 articles</span>
+      </div>
+      
+      <div class="model-status" id="model-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Learning your reading speed...</span>
+      </div>
+    </div>
+    
+    <div class="recent-section">
+      <h2>Recent Activity</h2>
+      <div class="recent-list" id="recent-list">
+        <p class="empty-state">No articles tracked yet. Start reading!</p>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <button class="btn-reset" id="reset-btn">Reset All Data</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+

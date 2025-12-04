@@ -1,0 +1,5 @@
+dist/
+node_modules/
+reflection.md
+
+# no need for having them in the repo

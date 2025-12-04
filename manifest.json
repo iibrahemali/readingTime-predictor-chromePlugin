@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Personal Reading Time Predictor",
+  "version": "1.0",
+  "description": "Learns your reading speed and predicts article reading time",
+  "permissions": ["storage"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content-bundle.js"],
+    "css": ["styles.css"]
+  }],
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}
+
